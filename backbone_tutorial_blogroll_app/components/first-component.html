@@ -1,0 +1,29 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+
+<!--Out component definition-->
+<dom-module id="first-component">
+
+<style></style>
+<template>
+	<h1>{{title}}</h1>
+	<p>I'm a solgan for the title above me.</p>
+</template>
+
+
+</dom-module>
+
+<script>
+	Polymer({
+		is: "first-component",
+		properties: {
+			title:{
+				type: String,
+				value: "Hey, I am your first component"
+			}
+		},
+		ready: function() {
+			console.log("It works!")
+		}
+	});
+</script>

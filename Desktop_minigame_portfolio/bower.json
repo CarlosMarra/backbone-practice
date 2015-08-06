@@ -1,0 +1,23 @@
+{
+  "name": "Desktop_minigame_portfolio",
+  "version": "0.0.0",
+  "authors": [
+    "Carlos Marra <cam27@dowling.edu>"
+  ],
+  "description": "portfolio site",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~1.0.7",
+    "bootstrap": "~3.3.5",
+    "backbone": "~1.2.1",
+    "underscore": "~1.8.3",
+    "jquery": "~2.1.4"
+  }
+}

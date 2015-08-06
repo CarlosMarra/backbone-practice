@@ -1,0 +1,62 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<script src="bower_components/jquery/dist/jquery.js"></script>
+
+
+<!--Out component definition-->
+<dom-module id="mgame-menu1">
+
+<style>
+	.block{
+		width: 30%;
+		float: left;
+		height: 100%;
+		background-image: url('images/placeholder1.jpg');
+		background-size: 100% 100%;
+	}
+	.mask{
+		background-color: rgba(0,0,0,.5);
+		height: 100%;
+	}
+
+	.lock_center{
+		margin-right: 25%;
+		margin-left: 25%;
+		border-radius: 50%;
+		padding-top: 25%;
+	}
+
+	figcaption{
+		font-size: 15px;
+		color: white;
+		text-align: center;
+	}
+</style>
+<template class="template">
+	<div class="block">
+		<div class="mask">
+			<figure class="lock_center">
+				<img width="100%" src="images/lock.png">
+				<figcaption>Click here to play MasterMind <br> (Unlocks Porfolio)</figcaption>
+			</figure>
+		</div>
+	</div>
+	<div class="clear"></div>
+</template>
+
+
+</dom-module>
+
+<script>
+	Polymer({
+		is: "mgame-menu1",
+		properties: {
+			title:{
+				type: String,
+				value: "LimoHere"
+			}
+		},
+		ready: function() {
+			console.log("It works!")
+		}
+	});
+</script>

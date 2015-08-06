@@ -1,0 +1,41 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<script src="bower_components/jquery/dist/jquery.js"></script>
+
+
+<!--Out component definition-->
+<dom-module id="tile-time">
+
+<style>
+	.block{
+		width: 200px;
+		height: 200px;
+		float: left;
+		background-color: black;
+		margin:5px;
+	}
+
+	
+</style>
+<template class="template">
+	<div class="block">
+		
+	</div>	
+</template>
+
+
+</dom-module>
+
+<script>
+	Polymer({
+		is: "tile-time",
+		properties: {
+			title:{
+				type: String,
+				value: "LimoHere"
+			}
+		},
+		ready: function() {
+			console.log("It works!")
+		}
+	});
+</script>

@@ -1,0 +1,66 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<script src="bower_components/jquery/dist/jquery.js"></script>
+
+
+<!--Out component definition-->
+<dom-module id="nav-bar">
+
+<style>
+	.block{
+		width: 10%;
+		float: left;
+		height: 100%;
+		background-color: black;
+	}
+
+	.lock_center{
+		margin-right: 25%;
+		margin-left: 25%;
+		border-radius: 50%;
+		padding-top: 10%;
+	}
+
+	figcaption{
+		font-size: 15px;
+		color: white;
+		text-align: center;
+	}
+</style>
+<template class="template">
+	<div class="block">
+		<div class="mask">
+			<figure class="lock_center">
+				<img width="100%" src="images/logo.png">
+			</figure>
+
+			<div class="navigation">
+				<ul>
+					<li><button></button></li>
+					<li><button></button></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<div class="clear"></div>
+
+	
+</template>
+
+
+</dom-module>
+
+<script>
+	Polymer({
+		is: "nav-bar",
+		properties: {
+			title:{
+				type: String,
+				value: "LimoHere"
+			}
+		},
+		ready: function() {
+			console.log("It works!")
+		}
+	});
+</script>

@@ -1,0 +1,55 @@
+Bower and backbone steps
+
+go to the directory of your project
+
+type in bower init
+this creates the bower.json file
+
+asks for
+	name
+	version
+	desciption
+	main file - if you don't have one just hit enter (not html files, more like libraries)
+	what types of modules does this package expose? (can leave this blank)
+	keywords - so people can search stuff
+	author -	Carlos Marra (findme@carlosamarra.com)
+	license - MIT
+	homepage - url
+	set currently installed components as dependencies (dont have any)
+	add commonly ignored files (basically github stuff, usually yes)
+	
+	would you like to mark this package as private which prevents it from being 				
+	accidentally published to the registry? usually no
+	
+	looks good?
+
+so now that we are set up, install stuff
+
+	when installing stuff make sure to add it to json file by putting --save after each command
+		
+		example - bower install polymer --save
+
+	after the first one, bow will create a folder called bower-components, where the installed files actually go
+
+	if a dependency also has a bower json file, bower will automatically get what the library needs and puts 
+	it in the bower-compenets folder
+
+
+creating our first element
+	
+	refer to index.html
+
+
+	to get a list of links to import it into your html file, use bower list --paths
+
+starting a local server (assumption is without xampp or wamp)
+
+	if you use node, you can npm install -g serve
+	this will install a little server
+	then type serve to start a serve on port 3000
+
+to access website
+
+	localhost:3000 on chrome address bar
+	
+	
